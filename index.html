@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APC RISK CONSULTING | Soluciones y Respaldo - Asesores Integrales de Seguros</title>
+    
+    <!-- Favicon & Pestaña del navegador -->
+    <link rel="icon" type="image/jpeg" href="Risk consulting.jpeg">
+    <link rel="shortcut icon" href="Risk consulting.jpeg">
+    <link rel="apple-touch-icon" href="Risk consulting.jpeg">
+
+    <!-- Meta Tags & SEO / Open Graph para WhatsApp y Redes Sociales -->
+    <meta name="description" content="APC Risk Consulting - Asesores Integrales de Seguros y Gestión de Riesgos. Coberturas para Auto, Comercio, Consorcio y Hogar con atención personalizada y respuesta inmediata.">
+    <meta property="og:title" content="APC RISK CONSULTING | Soluciones y Respaldo">
+    <meta property="og:description" content="Asesores Integrales de Seguros. Solicitá tu cotización personalizada al instante por WhatsApp al 11-6441-3315.">
+    <meta property="og:image" content="Risk consulting.jpeg">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cinzel', 'serif'],
+                    },
+                    colors: {
+                        apcNavy: {
+                            50: '#f0f4f9',
+                            100: '#dbe4f0',
+                            800: '#0d2c54',
+                            900: '#0a2540',
+                            950: '#051324',
+                        },
+                        apcTeal: {
+                            400: '#1679ab',
+                            500: '#0e8388',
+                            600: '#008080',
+                            700: '#006666',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(226, 232, 240, 0.9);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0a2540 0%, #0d2c54 50%, #051324 100%);
+        }
+        .teal-gradient {
+            background: linear-gradient(135deg, #0e8388 0%, #008080 100%);
+        }
+        .teal-glow {
+            box-shadow: 0 0 25px rgba(14, 131, 136, 0.3);
+        }
+        .logo-img-crop {
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-apcTeal-500/20 selection:text-apcNavy-900">
+
+    <!-- HEADER / NAV -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm transition-all duration-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Horizontal Logo Brand Header -->
+                <a href="#inicio" class="flex items-center gap-3.5 group py-2">
+                    <!-- Circular Crest Image Logo -->
+                    <div class="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-apcTeal-600 shadow-md flex-shrink-0 group-hover:scale-105 transition-transform bg-white">
+                        <img 
+                            src="Risk consulting.jpeg" 
+                            alt="APC Risk Consulting Logo" 
+                            class="w-full h-full logo-img-crop"
+                            onerror="this.onerror=null; this.src='https://placehold.co/200x200/0a2540/0e8388?text=APC';"
+                        >
+                    </div>
+                    <!-- Horizontal Typography Layout -->
+                    <div class="flex flex-col justify-center">
+                        <span class="text-lg sm:text-xl font-extrabold text-apcNavy-900 tracking-tight leading-none group-hover:text-apcTeal-600 transition-colors">
+                            APC RISK CONSULTING
+                        </span>
+                        <span class="text-[10px] sm:text-[11px] text-apcTeal-600 font-bold tracking-widest uppercase mt-0.5">
+                            SOLUCIONES Y RESPALDO
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-7 font-semibold text-slate-600 text-sm">
+                    <a href="#autos" class="hover:text-apcTeal-600 transition-colors">Autos</a>
+                    <a href="#comercio" class="hover:text-apcTeal-600 transition-colors">Comercio</a>
+                    <a href="#consorcio" class="hover:text-apcTeal-600 transition-colors">Consorcio</a>
+                    <a href="#hogar" class="hover:text-apcTeal-600 transition-colors">Hogar</a>
+                    <a href="#nosotros" class="hover:text-apcTeal-600 transition-colors">Nosotros</a>
+                    <a href="#faq" class="hover:text-apcTeal-600 transition-colors">Preguntas Frecuentes</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/5491164413315?text=Hola%20APC%20Risk%20Consulting%2C%20quisiera%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-full font-bold text-sm shadow-md transition-all hover:scale-105">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        <span>Solicitar Cotización</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="p-2 text-slate-700 hover:text-apcNavy-900 focus:outline-none" aria-label="Abrir menú">
+                        <i data-lucide="menu" class="w-7 h-7"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 shadow-lg">
+            <a href="#autos" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-apcTeal-600">Seguro de Autos</a>
+            <a href="#comercio" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-apcTeal-600">Integral de Comercio</a>
+            <a href="#consorcio" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-apcTeal-600">Integral de Consorcio</a>
+            <a href="#hogar" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-apcTeal-600">Combinado Familiar</a>
+            <a href="#nosotros" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-apcTeal-600">Nosotros</a>
+            <a href="#faq" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-apcTeal-600">Preguntas Frecuentes</a>
+            <a href="https://wa.me/5491164413315?text=Hola%20APC%20Risk%20Consulting%2C%20quisiera%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener noreferrer" onclick="toggleMobileMenu();" class="w-full mt-2 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-3 rounded-xl font-bold shadow-md">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                <span>Solicitar Cotización</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero-gradient relative py-16 lg:py-24 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Text -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs sm:text-sm font-semibold text-teal-300">
+                        <i data-lucide="shield-check" class="w-4 h-4 text-teal-400"></i>
+                        <span>APC Risk Consulting • Asesores de Riesgo y Seguros</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+                        Asegurá tu patrimonio con <span class="text-teal-400">soluciones a medida</span> y el mejor respaldo.
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-300 font-light leading-relaxed max-w-2xl">
+                        En <strong>APC Risk Consulting</strong> diseñamos coberturas integrales para tu Auto, Comercio, Consorcio y Hogar con atención personalizada y respuesta inmediata.
+                    </p>
+
+                    <!-- Feature Badges -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                        <div class="bg-white/5 border border-white/10 rounded-xl p-3.5 flex items-center gap-3">
+                            <i data-lucide="clock" class="w-6 h-6 text-teal-400 flex-shrink-0"></i>
+                            <span class="text-xs font-semibold text-slate-200">Atención Directa 24/7</span>
+                        </div>
+                        <div class="bg-white/5 border border-white/10 rounded-xl p-3.5 flex items-center gap-3">
+                            <i data-lucide="user-check" class="w-6 h-6 text-teal-400 flex-shrink-0"></i>
+                            <span class="text-xs font-semibold text-slate-200">Asesoramiento Profesional</span>
+                        </div>
+                        <div class="bg-white/5 border border-white/10 rounded-xl p-3.5 flex items-center gap-3">
+                            <i data-lucide="award" class="w-6 h-6 text-teal-400 flex-shrink-0"></i>
+                            <span class="text-xs font-semibold text-slate-200">Soluciones y Respaldo</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <button onclick="openWhatsApp('General')" class="inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl shadow-xl transition-all hover:scale-105 teal-glow">
+                            <i data-lucide="message-circle" class="w-6 h-6"></i>
+                            <span>Solicitar Cotización por WhatsApp</span>
+                        </button>
+                        <a href="#coberturas" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold px-7 py-4 rounded-xl transition-all">
+                            <i data-lucide="shield-check" class="w-5 h-5"></i>
+                            <span>Ver Coberturas</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Quick Form Hero -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card text-slate-900 p-6 sm:p-8 rounded-2xl shadow-2xl relative border-t-4 border-apcTeal-500">
+                        <div class="absolute -top-3 right-6 bg-apcTeal-600 text-white text-[11px] font-black px-3.5 py-1 rounded-full uppercase tracking-wider shadow">
+                            Atención Inmediata
+                        </div>
+                        <h2 class="text-2xl font-black text-apcNavy-900 mb-1">Solicitar Cotización</h2>
+                        <p class="text-slate-600 text-xs sm:text-sm mb-6">Completá tus datos para recibir asesoramiento personalizado en APC Risk Consulting por WhatsApp.</p>
+
+                        <form id="hero-quick-form" onsubmit="handleHeroSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Nombre Completo</label>
+                                <input type="text" id="hero-name" required placeholder="Ej. Carlos Martínez" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-apcTeal-500 focus:border-transparent outline-none transition text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Tipo de Cobertura</label>
+                                <select id="hero-type" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-apcTeal-500 focus:border-transparent outline-none transition text-sm bg-white">
+                                    <option value="Auto">Seguro de Auto</option>
+                                    <option value="Comercio">Integral de Comercio</option>
+                                    <option value="Consorcio">Integral de Consorcio</option>
+                                    <option value="Hogar">Combinado Familiar (Hogar)</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Localidad / Ciudad</label>
+                                <input type="text" id="hero-location" required placeholder="Ej. CABA, San Isidro, Córdoba" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-apcTeal-500 focus:border-transparent outline-none transition text-sm">
+                            </div>
+
+                            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
+                                <i data-lucide="message-circle" class="w-4 h-4 text-white"></i>
+                                <span>Solicitar Cotización</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST / COMPAÑÍAS ASEGURADORAS ASOCIADAS -->
+    <section class="py-10 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-6">
+                <p class="text-xs font-bold uppercase tracking-widest text-slate-400">
+                    Trabajamos con las principales aseguradoras de Argentina
+                </p>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-slate-700 font-bold text-xs sm:text-sm">
+                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">Federación Patronal</span>
+                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">Allianz</span>
+                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">Zurich</span>
+                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">San Cristóbal</span>
+                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">Sancor Seguros</span>
+                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">La Segunda</span>
+                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">Mercantil Andina</span>
+                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">SMG Seguros</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- COBERTURAS PRINCIPALES SECTION -->
+    <section id="coberturas" class="py-20 bg-slate-100/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-apcTeal-600 mb-2 block">Protección Patrimonial</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-apcNavy-900">Coberturas Disponibles</h2>
+                <p class="text-slate-600 mt-3 text-base">En APC Risk Consulting analizamos cada riesgo para ofrecerte la alternativa más conveniente con el mejor respaldo.</p>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Card 1: Autos -->
+                <div id="autos" class="bg-white rounded-2xl p-6 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-teal-50 text-apcTeal-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="car" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-apcNavy-900 mb-2">Seguro de Autos</h3>
+                        <p class="text-slate-600 text-sm mb-6">Protección total para tu vehículo en ciudad y ruta, con rápida asistencia en auxilio mecánico.</p>
+                        
+                        <ul class="space-y-3 text-sm text-slate-700 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Desde Responsabilidad Civil hasta Todo Riesgo con Franquicia.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Auxilio mecánico y servicio de remolque 24hs.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Protección contra granizo, cristales, lunetas, parabrisas y cerraduras.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Extensión de cobertura en países limítrofes.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2">
+                        <button onclick="openWhatsApp('Seguro de Auto')" class="w-full py-3 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-md transition-all hover:scale-[1.02] text-center text-sm flex items-center justify-center gap-2">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i>
+                            <span>Solicitar Cotización</span>
+                        </button>
+                        <button onclick="scrollToCalc('Auto')" class="w-full py-2 text-xs font-semibold text-slate-500 hover:text-apcNavy-900 transition-colors flex items-center justify-center gap-1.5">
+                            <span>O cotizar con formulario</span>
+                            <i data-lucide="arrow-down" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2: Comercio -->
+                <div id="comercio" class="bg-white rounded-2xl p-6 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-teal-50 text-apcTeal-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="store" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-apcNavy-900 mb-2">Integral de Comercio</h3>
+                        <p class="text-slate-600 text-sm mb-6">Resguardá el patrimonio de tu empresa, mercaderías, equipamiento y clientes.</p>
+                        
+                        <ul class="space-y-3 text-sm text-slate-700 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Incendio Edificio, Contenido General y Mercadería.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Robo de contenido general y dinero en caja o tránsito.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Responsabilidad Civil Comprensiva, Marquesinas y Linderos.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Seguro Técnico para computadoras y equipamiento comercial.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2">
+                        <button onclick="openWhatsApp('Integral de Comercio')" class="w-full py-3 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-md transition-all hover:scale-[1.02] text-center text-sm flex items-center justify-center gap-2">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i>
+                            <span>Solicitar Cotización</span>
+                        </button>
+                        <button onclick="scrollToCalc('Comercio')" class="w-full py-2 text-xs font-semibold text-slate-500 hover:text-apcNavy-900 transition-colors flex items-center justify-center gap-1.5">
+                            <span>O cotizar con formulario</span>
+                            <i data-lucide="arrow-down" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3: Consorcio -->
+                <div id="consorcio" class="bg-white rounded-2xl p-6 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-teal-50 text-apcTeal-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="building-2" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-apcNavy-900 mb-2">Integral de Consorcio</h3>
+                        <p class="text-slate-600 text-sm mb-6">Tranquilidad para administraciones y copropietarios ante imprevistos en áreas comunes.</p>
+                        
+                        <ul class="space-y-3 text-sm text-slate-700 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Incendio Edificio y espacios comunes a primer riesgo.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Responsabilidad Civil por ascensores, cañerías e instalaciones.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Daños por agua, tempestades, vendaval, ciclón y granizo.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Protección para personal de consorcio y rotura de máquinas.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2">
+                        <button onclick="openWhatsApp('Integral de Consorcio')" class="w-full py-3 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-md transition-all hover:scale-[1.02] text-center text-sm flex items-center justify-center gap-2">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i>
+                            <span>Solicitar Cotización</span>
+                        </button>
+                        <button onclick="scrollToCalc('Consorcio')" class="w-full py-2 text-xs font-semibold text-slate-500 hover:text-apcNavy-900 transition-colors flex items-center justify-center gap-1.5">
+                            <span>O cotizar con formulario</span>
+                            <i data-lucide="arrow-down" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 4: Hogar -->
+                <div id="hogar" class="bg-white rounded-2xl p-6 shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-teal-50 text-apcTeal-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="home" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-apcNavy-900 mb-2">Combinado Familiar</h3>
+                        <p class="text-slate-600 text-sm mb-6">Tu vivienda y pertenencias protegidas con servicios de asistencia domiciliaria las 24hs.</p>
+                        
+                        <ul class="space-y-3 text-sm text-slate-700 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Incendio Edificio y Contenido general de la vivienda.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Robo de electrodomésticos, equipos de TV y tecnología.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Responsabilidad Civil hechos privados de la familia.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-apcTeal-600 flex-shrink-0 mt-0.5"></i>
+                                <span>Urgencias 24hs (Plomería, Cerrajería, Electricidad, Cristales).</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2">
+                        <button onclick="openWhatsApp('Combinado Familiar')" class="w-full py-3 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-md transition-all hover:scale-[1.02] text-center text-sm flex items-center justify-center gap-2">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i>
+                            <span>Solicitar Cotización</span>
+                        </button>
+                        <button onclick="scrollToCalc('Hogar')" class="w-full py-2 text-xs font-semibold text-slate-500 hover:text-apcNavy-900 transition-colors flex items-center justify-center gap-1.5">
+                            <span>O cotizar con formulario</span>
+                            <i data-lucide="arrow-down" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- VENTAJAS Y DIFERENCIALES -->
+    <section id="nosotros" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-apcTeal-600 mb-2 block">Diferencial APC</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-apcNavy-900">¿Por qué Elegir APC Risk Consulting?</h2>
+                <p class="text-slate-600 mt-3 text-base">Un enfoque profesional enfocado en brindar soluciones efectivas y un respaldo constante ante cualquier imprevisto.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-apcTeal-500 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-apcNavy-900 text-teal-400 flex items-center justify-center mb-5">
+                        <i data-lucide="sliders" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-apcNavy-900 mb-2">Análisis Técnico de Riesgo</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Analizamos en detalle tus activos para estructurar coberturas a medida sin costos innecesarios.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-apcTeal-500 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-apcNavy-900 text-teal-400 flex items-center justify-center mb-5">
+                        <i data-lucide="headset" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-apcNavy-900 mb-2">Acompañamiento en Siniestros</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Gestionamos tus siniestros de principio a fin, asegurando resoluciones rápidas e indemnizaciones justas.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-apcTeal-500 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-apcNavy-900 text-teal-400 flex items-center justify-center mb-5">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-apcNavy-900 mb-2">Soluciones y Respaldo</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Trabajamos exclusivamente con compañías aseguradoras de mayor solvencia patrimonial del país.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-apcTeal-500 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-apcNavy-900 text-teal-400 flex items-center justify-center mb-5">
+                        <i data-lucide="smartphone" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-apcNavy-900 mb-2">Atención Agilizada</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Gestión digital de pólizas, cupones de pago y certificados de cobertura directamente a tu WhatsApp o e-mail.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SIMULADOR / COTIZADOR RÁPIDO WIDGET -->
+    <section id="cotizador" class="py-20 bg-apcNavy-900 text-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-apcNavy-800/90 border border-white/10 rounded-3xl p-6 sm:p-10 shadow-2xl relative">
+                
+                <div class="text-center mb-8">
+                    <span class="inline-block px-3.5 py-1 rounded-full bg-apcTeal-500/20 text-teal-300 text-xs font-bold uppercase tracking-wider mb-2">Cotizador APC</span>
+                    <h3 class="text-2xl sm:text-3xl font-black">Solicitar Cotización Personalizada</h3>
+                    <p class="text-slate-300 text-sm mt-1">Elegí la cobertura deseada y completá los datos para recibir tu propuesta directa por WhatsApp.</p>
+                </div>
+
+                <!-- Selector de Cobertura Tabs -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+                    <button type="button" onclick="setCalcCoverage('Auto')" id="calc-tab-Auto" class="calc-tab p-4 rounded-xl border border-apcTeal-500 bg-apcTeal-500/20 text-center flex flex-col items-center gap-2 transition font-bold text-sm text-teal-300">
+                        <i data-lucide="car" class="w-6 h-6"></i>
+                        <span>Auto</span>
+                    </button>
+                    <button type="button" onclick="setCalcCoverage('Comercio')" id="calc-tab-Comercio" class="calc-tab p-4 rounded-xl border border-white/10 bg-white/5 text-center flex flex-col items-center gap-2 transition font-medium text-sm text-slate-300 hover:border-white/30">
+                        <i data-lucide="store" class="w-6 h-6"></i>
+                        <span>Comercio</span>
+                    </button>
+                    <button type="button" onclick="setCalcCoverage('Consorcio')" id="calc-tab-Consorcio" class="calc-tab p-4 rounded-xl border border-white/10 bg-white/5 text-center flex flex-col items-center gap-2 transition font-medium text-sm text-slate-300 hover:border-white/30">
+                        <i data-lucide="building-2" class="w-6 h-6"></i>
+                        <span>Consorcio</span>
+                    </button>
+                    <button type="button" onclick="setCalcCoverage('Hogar')" id="calc-tab-Hogar" class="calc-tab p-4 rounded-xl border border-white/10 bg-white/5 text-center flex flex-col items-center gap-2 transition font-medium text-sm text-slate-300 hover:border-white/30">
+                        <i data-lucide="home" class="w-6 h-6"></i>
+                        <span>Hogar</span>
+                    </button>
+                </div>
+
+                <!-- Form Dynamic Fields -->
+                <form id="calculator-widget-form" onsubmit="handleCalcWidgetSubmit(event)" class="space-y-4">
+                    
+                    <div id="widget-fields-Auto" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Vehículo (Marca, Modelo y Año)</label>
+                                <input type="text" id="widget-auto-model" placeholder="Ej. Volkswagen Gol Trend 2020" class="w-full px-4 py-3 rounded-lg bg-apcNavy-950 border border-white/15 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-apcTeal-400">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Localidad de Guardado</label>
+                                <input type="text" id="widget-auto-location" placeholder="Ej. San Isidro, Buenos Aires" class="w-full px-4 py-3 rounded-lg bg-apcNavy-950 border border-white/15 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-apcTeal-400">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="widget-fields-Comercio" class="hidden space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Rubro / Actividad Comercial</label>
+                                <input type="text" id="widget-comercio-rubro" placeholder="Ej. Indumentaria, Gastronómico" class="w-full px-4 py-3 rounded-lg bg-apcNavy-950 border border-white/15 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-apcTeal-400">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Ubicación del Local</label>
+                                <input type="text" id="widget-comercio-location" placeholder="Ej. Microcentro, CABA" class="w-full px-4 py-3 rounded-lg bg-apcNavy-950 border border-white/15 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-apcTeal-400">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="widget-fields-Consorcio" class="hidden space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Número de Unidades / Dptos</label>
+                                <input type="number" id="widget-consorcio-units" placeholder="Ej. 24 unidades" class="w-full px-4 py-3 rounded-lg bg-apcNavy-950 border border-white/15 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-apcTeal-400">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Ubicación del Edificio</label>
+                                <input type="text" id="widget-consorcio-location" placeholder="Ej. Belgrano, CABA" class="w-full px-4 py-3 rounded-lg bg-apcNavy-950 border border-white/15 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-apcTeal-400">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="widget-fields-Hogar" class="hidden space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Tipo de Inmueble</label>
+                                <select id="widget-hogar-type" class="w-full px-4 py-3 rounded-lg bg-apcNavy-950 border border-white/15 text-white text-sm focus:outline-none focus:border-apcTeal-400">
+                                    <option value="Casa Particular">Casa Particular</option>
+                                    <option value="Departamento">Departamento</option>
+                                    <option value="Barrio Cerrado / Country">Barrio Cerrado / Country</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Localidad</label>
+                                <input type="text" id="widget-hogar-location" placeholder="Ej. Vicente López, Buenos Aires" class="w-full px-4 py-3 rounded-lg bg-apcNavy-950 border border-white/15 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-apcTeal-400">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Nombre y Apellido</label>
+                            <input type="text" id="widget-user-name" required placeholder="Tu Nombre" class="w-full px-4 py-3 rounded-lg bg-apcNavy-950 border border-white/15 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-apcTeal-400">
+                        </div>
+                        <div class="flex items-end">
+                            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2 teal-glow text-sm">
+                                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                                <span>Solicitar Cotización por WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (FAQ) -->
+    <section id="faq" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-apcTeal-600 mb-1 block">Claridad Ante Todo</span>
+                <h3 class="text-3xl font-black text-apcNavy-900">Preguntas Frecuentes</h3>
+            </div>
+
+            <div class="space-y-4">
+                
+                <!-- FAQ Item 1 -->
+                <div class="border border-slate-200 rounded-2xl bg-white overflow-hidden shadow-sm transition">
+                    <button onclick="toggleFAQ(1)" class="w-full text-left p-5 font-bold text-apcNavy-900 flex items-center justify-between hover:bg-slate-50 transition">
+                        <span>¿Cómo funciona el auxilio mecánico en el seguro de autos?</span>
+                        <i id="faq-icon-1" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-200"></i>
+                    </button>
+                    <div id="faq-answer-1" class="hidden p-5 text-slate-600 text-sm border-t border-slate-100 leading-relaxed bg-slate-50/50">
+                        Disponés de servicio de asistencia y remolque 24hs en todo el país y países limítrofes. La solicitud se realiza de manera rápida telefónicamente o mediante la app de la compañía asignada.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-slate-200 rounded-2xl bg-white overflow-hidden shadow-sm transition">
+                    <button onclick="toggleFAQ(2)" class="w-full text-left p-5 font-bold text-apcNavy-900 flex items-center justify-between hover:bg-slate-50 transition">
+                        <span>¿Qué documentación se solicita para asegurar un Comercio o Consorcio?</span>
+                        <i id="faq-icon-2" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-200"></i>
+                    </button>
+                    <div id="faq-answer-2" class="hidden p-5 text-slate-600 text-sm border-t border-slate-100 leading-relaxed bg-slate-50/50">
+                        Para comercios solicitamos CUIT, dirección fiscal y detalle básico del rubro o bienes. Para consorcios, CUIT de la administración, acta de designación y metros cuadrados/unidades del edificio.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-slate-200 rounded-2xl bg-white overflow-hidden shadow-sm transition">
+                    <button onclick="toggleFAQ(3)" class="w-full text-left p-5 font-bold text-apcNavy-900 flex items-center justify-between hover:bg-slate-50 transition">
+                        <span>¿Cómo me ayuda APC Risk Consulting ante un siniestro?</span>
+                        <i id="faq-icon-3" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-200"></i>
+                    </button>
+                    <div id="faq-answer-3" class="hidden p-5 text-slate-600 text-sm border-t border-slate-100 leading-relaxed bg-slate-50/50">
+                        Nos encargamos personalmente de ingresar la denuncia, confeccionar el reclamo y realizar el seguimiento hasta el cobro de la indemnización correspondiente, protegiendo tus intereses en todo momento.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-apcNavy-950 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                
+                <!-- Col 1 -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-full bg-white overflow-hidden border-2 border-apcTeal-500 flex-shrink-0 shadow-md">
+                            <img src="Risk consulting.jpeg" alt="APC Logo" class="w-full h-full logo-img-crop" onerror="this.onerror=null; this.src='https://placehold.co/100x100/0a2540/0e8388?text=APC';">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-base font-extrabold text-white tracking-tight leading-none">APC RISK CONSULTING</span>
+                            <span class="text-[9px] text-apcTeal-400 font-bold tracking-widest uppercase mt-0.5">SOLUCIONES Y RESPALDO</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Consultoría integral de riesgos y seguros patrimoniales. Asesoramiento profesional enfocado en brindar respuestas rápidas y respaldo continuo.
+                    </p>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Coberturas</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#autos" class="hover:text-teal-400 transition">Seguro de Autos</a></li>
+                        <li><a href="#comercio" class="hover:text-teal-400 transition">Integral de Comercio</a></li>
+                        <li><a href="#consorcio" class="hover:text-teal-400 transition">Integral de Consorcio</a></li>
+                        <li><a href="#hogar" class="hover:text-teal-400 transition">Combinado Familiar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Soluciones y Respaldo</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-3.5 h-3.5 text-apcTeal-400"></i>
+                            <span>Atención Personalizada</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-3.5 h-3.5 text-apcTeal-400"></i>
+                            <span>Gestión de Siniestros</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-3.5 h-3.5 text-apcTeal-400"></i>
+                            <span>Emisión Rápida Digital</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="w-3.5 h-3.5 text-apcTeal-400"></i>
+                            <span>Respaldo de Primer Nivel</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Contacto Directo</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li>
+                            <a href="https://wa.me/5491164413315" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-bold transition">
+                                <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+                                <span>WhatsApp: 11 6441-3315</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+5491164413315" class="flex items-center gap-2 hover:text-teal-400 transition">
+                                <i data-lucide="phone" class="w-3.5 h-3.5 text-apcTeal-400"></i>
+                                <span>+54 9 11 6441-3315</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:apcriskconsulting@gmail.com" class="flex items-center gap-2 hover:text-teal-400 transition">
+                                <i data-lucide="mail" class="w-3.5 h-3.5 text-apcTeal-400"></i>
+                                <span>apcriskconsulting@gmail.com</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="clock" class="w-3.5 h-3.5 text-apcTeal-400"></i>
+                            <span>Lun a Vie 9:00 a 17:00 hs</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Legal Bottom -->
+            <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>© 2026 APC Risk Consulting. Soluciones y Respaldo. Todos los derechos reservados.</p>
+                <div class="flex gap-6">
+                    <a href="#inicio" class="hover:text-slate-400">Volver arriba</a>
+                    <a href="https://wa.me/5491164413315" target="_blank" class="hover:text-emerald-400">Consultar por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a 
+            href="https://wa.me/5491164413315?text=Hola%20APC%20Risk%20Consulting%2C%20quisiera%20solicitar%20una%20cotizaci%C3%B3n." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="Contactar por WhatsApp"
+            class="flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-2xl hover:shadow-emerald-500/50 transition-all duration-300 hover:scale-110"
+        >
+            <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Config WhatsApp Phone Number (Argentina: 54 9 11 64413315)
+        const WHATSAPP_PHONE = '5491164413315';
+        let currentCalcType = 'Auto';
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+        document.getElementById('mobile-menu-btn').addEventListener('click', toggleMobileMenu);
+
+        // WhatsApp General Sender
+        function openWhatsApp(context) {
+            let msg = 'Hola APC Risk Consulting, quisiera solicitar una cotización.';
+            if (context && context !== 'General' && context !== 'Consulta Hero APC') {
+                msg = `Hola APC Risk Consulting, quisiera solicitar una cotización para *${context}*.`;
+            }
+            const text = encodeURIComponent(msg);
+            window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${text}`, '_blank');
+        }
+
+        // Hero Quick Form
+        function handleHeroSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('hero-name').value;
+            const type = document.getElementById('hero-type').value;
+            const location = document.getElementById('hero-location').value;
+
+            const text = encodeURIComponent(`Hola APC Risk Consulting! Mi nombre es ${name}.\nQuisiera solicitar una cotización para un seguro de *${type}* en la zona de *${location}*.\n¿Podrían ponerse en contacto?`);
+            window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${text}`, '_blank');
+        }
+
+        // Scroll to Calculator with Preselected Coverage
+        function scrollToCalc(type) {
+            setCalcCoverage(type);
+            document.getElementById('cotizador').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Calc Widget Tab Selector
+        function setCalcCoverage(type) {
+            currentCalcType = type;
+
+            ['Auto', 'Comercio', 'Consorcio', 'Hogar'].forEach(t => {
+                const tab = document.getElementById(`calc-tab-${t}`);
+                const fields = document.getElementById(`widget-fields-${t}`);
+
+                if (t === type) {
+                    tab.className = 'calc-tab p-4 rounded-xl border border-apcTeal-500 bg-apcTeal-500/20 text-center flex flex-col items-center gap-2 transition font-bold text-sm text-teal-300';
+                    if (fields) fields.classList.remove('hidden');
+                } else {
+                    tab.className = 'calc-tab p-4 rounded-xl border border-white/10 bg-white/5 text-center flex flex-col items-center gap-2 transition font-medium text-sm text-slate-300 hover:border-white/30';
+                    if (fields) fields.classList.add('hidden');
+                }
+            });
+        }
+
+        // Calc Widget Submit to WhatsApp
+        function handleCalcWidgetSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('widget-user-name').value;
+            let details = '';
+
+            if (currentCalcType === 'Auto') {
+                const model = document.getElementById('widget-auto-model').value || 'A coordinar';
+                const loc = document.getElementById('widget-auto-location').value || 'A coordinar';
+                details = `Vehículo: ${model} | Guardado en: ${loc}`;
+            } else if (currentCalcType === 'Comercio') {
+                const rubro = document.getElementById('widget-comercio-rubro').value || 'A coordinar';
+                const loc = document.getElementById('widget-comercio-location').value || 'A coordinar';
+                details = `Rubro: ${rubro} | Ubicación: ${loc}`;
+            } else if (currentCalcType === 'Consorcio') {
+                const units = document.getElementById('widget-consorcio-units').value || 'A coordinar';
+                const loc = document.getElementById('widget-consorcio-location').value || 'A coordinar';
+                details = `Unidades: ${units} | Ubicación: ${loc}`;
+            } else if (currentCalcType === 'Hogar') {
+                const type = document.getElementById('widget-hogar-type').value || 'A coordinar';
+                const loc = document.getElementById('widget-hogar-location').value || 'A coordinar';
+                details = `Tipo: ${type} | Localidad: ${loc}`;
+            }
+
+            const message = `Hola APC Risk Consulting! Solicitud de Cotización:\n- *Nombre:* ${name}\n- *Tipo de Seguro:* ${currentCalcType}\n- *Detalles:* ${details}`;
+            window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        // FAQ Toggle Accordion
+        function toggleFAQ(index) {
+            const answer = document.getElementById(`faq-answer-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                answer.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>
