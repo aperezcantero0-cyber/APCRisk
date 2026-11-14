@@ -236,22 +236,81 @@
     </section>
 
     <!-- TRUST / COMPAÑÍAS ASEGURADORAS ASOCIADAS -->
-    <section class="py-10 bg-white border-y border-slate-200">
+    <section class="py-12 bg-white border-y border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-6">
-                <p class="text-xs font-bold uppercase tracking-widest text-slate-400">
-                    Trabajamos con las principales aseguradoras de Argentina
+            <div class="text-center mb-8">
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-apcTeal-700 text-xs font-bold tracking-widest uppercase mb-2">
+                    <i data-lucide="shield-check" class="w-3.5 h-3.5 text-apcTeal-600"></i>
+                    Compañías Líderes con las que Operamos
+                </span>
+                <p class="text-xs sm:text-sm text-slate-500 max-w-xl mx-auto">
+                    Alianzas estratégicas con aseguradoras de máxima solvencia patrimonial para respaldar tus pólizas.
                 </p>
             </div>
-            <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-slate-700 font-bold text-xs sm:text-sm">
-                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">Federación Patronal</span>
-                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">Allianz</span>
-                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">Zurich</span>
-                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">San Cristóbal</span>
-                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">Sancor Seguros</span>
-                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">La Segunda</span>
-                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">Mercantil Andina</span>
-                <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl hover:border-apcTeal-500 hover:text-apcNavy-900 transition shadow-sm">SMG Seguros</span>
+            
+            <!-- Grid de Compañías Principales -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+                
+                <!-- Federación Patronal -->
+                <div class="group bg-white border border-slate-200/90 hover:border-apcTeal-500 rounded-2xl p-4 sm:p-5 text-center transition-all duration-200 hover:shadow-lg hover:-translate-y-1 flex flex-col items-center justify-between min-h-[170px]">
+                    <div class="w-full h-16 flex items-center justify-center p-1">
+                        <img src="logo-federacion-patronal.png" alt="Federación Patronal Seguros" class="max-h-14 max-w-[150px] object-contain group-hover:scale-105 transition-transform duration-200">
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 w-full">
+                        <span class="text-xs sm:text-sm font-black text-apcNavy-900 group-hover:text-apcTeal-600 transition-colors block leading-tight">
+                            Federación Patronal
+                        </span>
+                        <span class="text-[9.5px] text-slate-400 font-semibold uppercase tracking-wider mt-0.5 block">
+                            Líder en autos y patrimoniales
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Allianz -->
+                <div class="group bg-white border border-slate-200/90 hover:border-apcTeal-500 rounded-2xl p-4 sm:p-5 text-center transition-all duration-200 hover:shadow-lg hover:-translate-y-1 flex flex-col items-center justify-between min-h-[170px]">
+                    <div class="w-full h-16 flex items-center justify-center p-1">
+                        <img src="logo-allianz.png" alt="Allianz Seguros" class="max-h-12 max-w-[150px] object-contain group-hover:scale-105 transition-transform duration-200">
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 w-full">
+                        <span class="text-xs sm:text-sm font-black text-apcNavy-900 group-hover:text-apcTeal-600 transition-colors block leading-tight">
+                            Allianz
+                        </span>
+                        <span class="text-[9.5px] text-slate-400 font-semibold uppercase tracking-wider mt-0.5 block">
+                            Respaldo internacional global
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Mercantil Andina -->
+                <div class="group bg-white border border-slate-200/90 hover:border-apcTeal-500 rounded-2xl p-4 sm:p-5 text-center transition-all duration-200 hover:shadow-lg hover:-translate-y-1 flex flex-col items-center justify-between min-h-[170px]">
+                    <div class="w-full h-16 flex items-center justify-center p-1">
+                        <img src="logo-mercantil-andina.png" alt="Mercantil Andina Seguros" class="max-h-12 max-w-[150px] object-contain group-hover:scale-105 transition-transform duration-200">
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 w-full">
+                        <span class="text-xs sm:text-sm font-black text-apcNavy-900 group-hover:text-apcTeal-600 transition-colors block leading-tight">
+                            Mercantil Andina
+                        </span>
+                        <span class="text-[9.5px] text-slate-400 font-semibold uppercase tracking-wider mt-0.5 block">
+                            Solidez y respuesta ágil
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Integrity Seguros -->
+                <div class="group bg-white border border-slate-200/90 hover:border-apcTeal-500 rounded-2xl p-4 sm:p-5 text-center transition-all duration-200 hover:shadow-lg hover:-translate-y-1 flex flex-col items-center justify-between min-h-[170px]">
+                    <div class="w-full h-16 flex items-center justify-center p-1">
+                        <img src="logo-integrity.png" alt="Integrity Seguros" class="max-h-14 max-w-[150px] object-contain group-hover:scale-105 transition-transform duration-200">
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 w-full">
+                        <span class="text-xs sm:text-sm font-black text-apcNavy-900 group-hover:text-apcTeal-600 transition-colors block leading-tight">
+                            Integrity Seguros
+                        </span>
+                        <span class="text-[9.5px] text-slate-400 font-semibold uppercase tracking-wider mt-0.5 block">
+                            Especialistas en protección
+                        </span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
